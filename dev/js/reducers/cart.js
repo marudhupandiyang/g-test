@@ -20,19 +20,26 @@ export default function (state = [], action) {
             break;
 
         case ActionTypes.REMOVE_FROM_CART:
-            const itemToRemove = _.find(state, {id: action.payload});
+            let itemToRemove = _.find(state, {id: action.payload}) || undefined;
             newState = [].concat(state);
             if (itemToRemove) {
               itemToRemove.quantity--;
               if (!itemToRemove.quantity) {
-                let newState = _.remove(state, (id) => {
-                  return itemToRemove.id === action.payload;
-                });
+                newState.splice(newState.indexOf(itemToRemove), 1);
               }
               return newState;
             }
             return newState;
             break;
+
+          case ActionTypes.CLEAR_FROM_CART:
+            let itemToClear = _.find(state, {id: action.payload}) || undefined;
+            newState = [].concat(state);
+            if (itemToClear) {
+              newState.splice(newState.indexOf(itemToClear), 1);
+            }
+            return newState;
+          break;
     }
     return state;
 }

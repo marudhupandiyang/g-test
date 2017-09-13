@@ -14,3 +14,10 @@ export const removeFromCart = (id) => {
         payload: id
     }
 };
+
+export const clearFromCart = (id) => {
+    return {
+        type: ActionTypes.CLEAR_FROM_CART,
+        payload: id
+    }
+};
