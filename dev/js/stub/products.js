@@ -15,7 +15,7 @@ const PRODUCT_LIST = [
     id: 2,
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder 1 ',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -23,7 +23,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder2 ',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -31,7 +31,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder3',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -39,7 +39,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder4',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -47,7 +47,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder5',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -55,7 +55,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder6',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -63,7 +63,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder7',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },{
@@ -71,7 +71,7 @@ const PRODUCT_LIST = [
 
     imageurl: 'https://images-na.ssl-images-amazon.com/images/I/51tS3zd1yAL.jpg',
     brandName: 'Vorson',
-    productName: 'Vorson Flip Mobile Phone Car Holder',
+    productName: 'Vorson Flip Mobile Phone Car Holder8',
     packageDetail: '13.9 x 10.6 x 4.5 cm',
     price: 500,
   },
