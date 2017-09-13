@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 import ProductListReducer from './productList';
-// import ActiveProductListReducer from './reducer-active-user';
+import CartReducer from './cart';
 
 /*
  * We combine all reducers into a single object before updated data is dispatched (sent) to store
@@ -9,7 +9,7 @@ import ProductListReducer from './productList';
 
 const allReducers = combineReducers({
     products: ProductListReducer,
-    // cart: ActiveUserReducer
+    cart: CartReducer
 });
 
 export default allReducers

@@ -5,13 +5,13 @@
 
 import STUB_PRODUCTS from './../stub/products';
 
-export default function (state = null, action) {
+export default function (state = STUB_PRODUCTS, action) {
     switch (action.type) {
-        default:
         case 'GET_PRODUCTS':
-            // return action.payload;
-            return STUB_PRODUCTS;
+            return action.payload;
             break;
+        default:
+          return [].concat(STUB_PRODUCTS);
     }
     return state;
 }

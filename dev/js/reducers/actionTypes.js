@@ -1,0 +1,6 @@
+const TYPES = {
+  ADD_TO_CART: 'ADDTOCART',
+  REMOVE_FROM_CART: 'REMOVEFROMCART',
+};
+
+export default TYPES;

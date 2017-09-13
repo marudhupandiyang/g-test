@@ -1,7 +1,16 @@
-export const selectUser = (user) => {
-    console.log("You clicked on user: ", user.first);
+import ActionTypes from './../reducers/actionTypes';
+
+export const addToCart = (id) => {
     return {
-        type: 'USER_SELECTED',
-        payload: user
+        type: ActionTypes.ADD_TO_CART,
+        payload: id
+    }
+};
+
+
+export const removeFromCart = (id) => {
+    return {
+        type: ActionTypes.REMOVE_FROM_CART,
+        payload: id
     }
 };
