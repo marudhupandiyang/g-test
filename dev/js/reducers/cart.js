@@ -1,7 +1,14 @@
 import ActionTypes from './actionTypes';
 import _ from 'lodash';
 
-export default function (state = [], action) {
+
+const saveToLocalStorage = (state) => {
+  const str = JSON.stringify(state);
+  localStorage.setItem('cart', str);
+}
+
+
+export default function (state = undefined, action) {
     // debugger;
     switch (action.type) {
         case ActionTypes.ADD_TO_CART:
@@ -9,6 +16,7 @@ export default function (state = [], action) {
             let newState = [].concat(state);
             if (itemToAdd) {
               itemToAdd.quantity++;
+              saveToLocalStorage(newState);
               return newState;
             } else {
               newState.push({
@@ -16,6 +24,7 @@ export default function (state = [], action) {
                 quantity: 1,
               });
             }
+            saveToLocalStorage(newState);
             return newState;
             break;
 
@@ -27,8 +36,10 @@ export default function (state = [], action) {
               if (!itemToRemove.quantity) {
                 newState.splice(newState.indexOf(itemToRemove), 1);
               }
+              saveToLocalStorage(newState);
               return newState;
             }
+            saveToLocalStorage(newState);
             return newState;
             break;
 
@@ -38,8 +49,14 @@ export default function (state = [], action) {
             if (itemToClear) {
               newState.splice(newState.indexOf(itemToClear), 1);
             }
+            saveToLocalStorage(newState);
             return newState;
           break;
+    }
+
+    if (state === undefined) {
+      const items = JSON.parse(localStorage.getItem('cart')) || [];
+      state = items;
     }
     return state;
 }
